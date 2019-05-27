@@ -43,5 +43,5 @@ export default withTracker(() => {
         coordinates: Coordinates.find({}).fetch()
     }
 })(GoogleApiWrapper({
-    apiKey: Meteor.settings.public.GOOGLE_API
+    apiKey: process.env.GOOGLE_API
 })(BlackoutMap))
