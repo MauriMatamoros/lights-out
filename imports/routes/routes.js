@@ -20,7 +20,6 @@ export const routes = (
                 <Route exact path="/signup" component={Signup} />
                 <Route exact path="/map" component={BlackoutMap} />
                 <Route exact path="/alert" component={AlertBlackout} />
-                <Route exact path="/data" component={Data} />
             </Switch>
         </div>
     </Router>

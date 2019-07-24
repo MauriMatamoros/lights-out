@@ -26,9 +26,6 @@ export default class NavBar extends React.Component {
                 <Collapse isOpen={this.state.isOpen} navbar>
                 <Nav className="ml-auto" navbar>
                     <NavItem>
-                        <NavLink tag={RRNavLink} exact to="/data" style={{ color: 'white' }}>Data</NavLink>
-                    </NavItem>
-                    <NavItem>
                         <NavLink tag={RRNavLink} exact to="/map" style={{ color: 'white' }}>Mapa</NavLink>
                     </NavItem>
                     <NavItem>

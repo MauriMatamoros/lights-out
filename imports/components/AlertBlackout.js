@@ -45,12 +45,19 @@ export class AlertBlackout extends React.Component {
                     <Row>
                         <Col className="text-center">
                             {this.props.coords ? (
-                                    <Button 
-                                        onClick={this.onAlert} 
-                                        block 
-                                        color="light"
-                                        disabled={this.state.loading}
-                                    >¡No hay luz!</Button>
+                                    <>
+                                        <Button 
+                                            onClick={this.onAlert} 
+                                            block 
+                                            color="light"
+                                            disabled={this.state.loading}
+                                        >¡No hay luz!</Button>
+                                        <Button 
+                                            onClick={() => history.push('/map')}
+                                            block 
+                                            color="light" 
+                                        >Ver mapa</Button>
+                                    </>
                             ) : (
                                 <Spinner color="info" style={{ width: '20rem', height: '20rem' }}/>
                             )}
